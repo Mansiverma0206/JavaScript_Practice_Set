@@ -1,0 +1,89 @@
+<html>
+
+<head>
+   <script>
+      var box = undefined;
+      var res = undefined;
+
+      function init() {
+         box = document.getElementById('box');
+         res = document.getElementById("res");
+      }
+
+      function checkNan(value) 
+      {
+         var status = isNaN(value);
+         if (status) 
+         {
+            alert("Please provide a valid number")
+         }
+         return status;
+      }
+
+      function show() {
+         var num = parseInt(box.value);
+         if (!checkNan(num)) {
+            var total = 0;
+            for (var x = 1; x <= num; x++) {
+               var value = parseInt(prompt("number : "))
+               total = total + value;
+
+            }
+            document.getElementById('res').innerText = total;
+         }
+      }
+
+      function factorial() {
+         var num = parseInt(box.value);
+         if (!checkNan(num)) {
+            var result = 1;
+            for (var x = num; x >= 1; x--) {
+               result = result * x;
+            }
+            document.getElementById('fact').innerText = result;
+         }
+      }
+
+      function prime()
+      {
+         var prime = document.getElementById("primeNum");
+         var num = parseInt(box.value);
+         if (!checkNan(num))
+         {
+         var flag = true;
+         for(var x=2 ; x<num; x++)
+         {
+            if(num%x==0)
+            {
+               prime.innerText = "Not a prime number"
+               flag = false;
+               break;
+            }
+         }
+         if(flag)
+         {
+            prime.innerText = "prime number"
+         }
+      }
+   }
+   
+   </script>
+
+</head>
+
+<body onload="init()">
+   <h1>Loop Practice</h1>
+   <hr>
+   <input type="number" id="box" placeholder="enter a number">&nbsp;&nbsp;
+   <button onclick="show()">Okay</button>&nbsp;&nbsp;
+   <b>Sum : <span id="res">00</span></b>
+   <hr>
+   <button onclick="factorial()">Factorial</button>&nbsp;&nbsp;
+   <b>Factorial : <span id="fact">00</span></b>
+   <hr>
+   <button onclick="prime()">Prime</button>&nbsp;&nbsp;
+   <b>Prime : <span id="primeNum">00</span></b>
+   <hr>
+</body>
+
+</html>

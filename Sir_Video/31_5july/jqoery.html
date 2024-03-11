@@ -1,0 +1,22 @@
+<html>
+   <head>
+      <script src="jquery-3.7.1.min.js"></script>
+      <script>
+         $(document).ready(function(){
+              $("#b1").click(function()
+              {
+               alert("hello !")
+              });
+              $('#b2').click(function(){
+              var txt = $('#lbl').text()
+              alert(txt)
+              })
+         });
+      </script>
+   </head>
+   <body>
+      <h1 id="lbl">Jquery Page</h1>
+       <button id="b1">Okay</button>
+       <button id="b2">OKAY2</button>
+   </body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+
+<head>
+   <link rel="stylesheet" href="index.css">
+   <script src="indx.js"></script>
+</head>
+
+<body onload="init()">
+   <h1>Employee Record</h1>
+   <hr>
+   <div class="frmdiv">
+      <div>
+         <input type="text" class="input" id="idBox" placeholder="Employee ID">&nbsp;&nbsp;
+         <input type="text"  class="input" id="nameBox" placeholder="Employee Name">&nbsp;&nbsp;
+         <select id="departBox" class="input">
+            <option>Choose Your Department</option>
+            <option>Python Developer</option>
+            <option>Java developer</option>
+            <option>Front End Developer</option>
+            <option>Backend Developer</option>
+            <option>Data Analyist</option>
+         </select>
+         <br>
+      </div>
+      <div>
+         <input type="text" name="" id="salBox"  class="input"  placeholder="Enter your salary">&nbsp;&nbsp;
+         <input type="date" name="" id="joinBox" class="input"  placeholder="Joining Date">&nbsp;&nbsp;
+         <button  class="input" onclick="addEmp()">Add Employee</button>
+         <button class="input" onclick="saveEmp()">Save Employee</button>
+         <hr>
+      </div>
+   </div>
+   <table align="center" border="2px" cellspaing="1"cellpadding='10'>
+      <thead >
+         <tr>
+            <th>S.no</th>
+            <th>Employee ID</th>
+            <th>Employee Name</th>
+            <th>Deparment</th>
+            <th>Salary</th>
+            <th>Joining Date</th>
+         </tr>
+      </thead>
+      <tbody id="tbody">
+
+      </tbody>
+   </table>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<html>
+   <head>
+       <script>
+         var ag = undefined;
+         var mg = undefined; 
+         function init()
+         {
+            document.getElementById('age').value;
+            document.getElementById('msg');
+         }
+         function process()
+         {
+          var agebox  =parseInt(age.value);
+         
+          if(agebox>=18){
+            msg.innerHTML = "<span style='color:green'>You Can Vote</span>"
+          }else{
+            msg.innerHTML = "<span style='color:red'>You Can not Vote</span>"
+          }
+         }
+       </script>
+   </head>
+   <body onload="init()">
+      <h1>Voting Program</h1><hr>
+      <input type="number" id="age" placeholder="Enter your age">
+      <hr>
+      <button onclick="process()">Okay</button>&nbsp;&nbsp;&nbsp;
+      <b>Message : <span id="msg">welcome to voting program</span></b>
+   </body>
+</html>

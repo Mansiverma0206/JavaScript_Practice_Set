@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>cALCULATION Demo</title>
+   <script>
+      // function fun1()
+      // {
+      //   var fnum = document.getElementById('fnum');
+      //   var snum = document.getElementById('snum');
+      //   var res = document.getElementById('res')
+       
+      //   var x = fnum.value*1;
+      //   var y = snum.value*1;
+
+      //   var z = x + y ;
+
+      //   res.innerText = z
+      // }
+
+      function fun1()
+      {
+         var x = document.getElementById('fnum').value;
+         var y = document.getElementById('snum').value;
+         var z = document.getElementById('res');
+
+         var z = parseInt(x) + parseInt(y);
+         res.innerText = z;
+      }
+   </script>
+</head>
+<body>
+   <h1>CALCULATION Demo</h1>
+   <hr>
+   <input type="number" id="fnum" placeholder="first number">&nbsp;&nbsp;
+   <input type="number" id="snum" placeholder="Second number">&nbsp;&nbsp;
+   <span id="res">Result : 00</span>
+   <hr>
+   <button onclick="fun1()">Okay</button>
+</body>
+</html>

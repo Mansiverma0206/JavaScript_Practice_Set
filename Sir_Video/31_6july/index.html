@@ -1,0 +1,53 @@
+<html>
+
+<head>
+   <script src="jquery-3.7.1.min.js"></script>
+   <script>
+      $(document).ready(function(){
+         $('#btn').click(function(){
+            // $('#p1').hide()
+            // $('#p1').hide(5000)
+            // $('#p1').slideUp(3000)
+            $('#p1').fadeOut(3000)
+         })
+         $('#btn2').click(function(){
+            // $('#p1').show()
+            // $('#p1').show(3000)
+            $('#p1').fadeIn(5000)
+            // $('#p1').slideDown(5000)
+         })
+         $('#btn3').click(function(){
+            // $('#p1').toggle()
+            // $('#p1').toggle(3000)
+            // $('#p1').slideToggle(3000)
+            $('#p1').fadeToggle(3000)
+
+
+         })
+      })
+   </script>
+   <style>
+      p {
+         background-color: rgb(229, 132, 132);
+         color: black;
+         font-size: 25px;
+      }
+      
+   </style>
+</head>
+
+<body>
+   <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quae explicabo labore error, amet incidunt
+      deserunt exercitationem dignissimos modi voluptatem dolorum minima laboriosam soluta, nostrum delectus assumenda
+      consectetur recusandae debitis voluptatum? Minus optio, cum cumque eos est facere facilis consequatur asperiores
+      deserunt, fuga harum qui sit natus laborum exercitationem omnis.
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. In sapiente repudiandae id ut voluptatem provident animi
+      aliquid quas eius sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quibusdam ut quia atque
+      facilis doloremque nemo accusantium deserunt, perspiciatis alias.
+   </p>
+   <button id="btn">Hide</button>
+   <button id="btn2">show</button>
+   <button id="btn3">hide/show</button>
+</body>
+
+</html>

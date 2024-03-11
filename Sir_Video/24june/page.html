@@ -1,0 +1,58 @@
+<html>
+
+<head>
+   <script>
+      var box = undefined;
+      var res = undefined;
+      function init() {
+         box = document.getElementById('box');
+         res = document.getElementById("res");
+      }
+      function show() {
+         var num = parseInt(box.value);
+         if (isNaN(num))
+            alert("Please provide a valid number")
+         else {
+            var total = 0 ;
+            for(var x = 1; x<=num; x++) 
+            {
+               var value = parseInt(prompt("number : "))
+               total = total + value;
+               
+            }
+            document.getElementById('res').innerText = total;
+         }
+      }
+
+      function factorial()
+      {
+         var num = parseInt(box.value);
+         if (isNaN(num))
+            alert("Please provide a valid number")
+         else 
+         {
+            var result =  1 ;
+             for(var x=num; x>=1; x--)
+             {
+               result = result * x;
+             }
+             document.getElementById('fact').innerText = result;
+         }
+      }
+   </script>
+
+</head>
+
+<body onload="init()">
+   <h1>Loop Practice</h1>
+   <hr>
+   <input type="number" id="box" placeholder="enter a number">&nbsp;&nbsp;
+   <button onclick="show()">Okay</button>&nbsp;&nbsp;
+   <b>Sum : <span id="res">00</span></b>
+    <hr>
+   <button onclick="factorial()">Factorial</button>&nbsp;&nbsp;
+   <b>Factorial : <span id="fact">00</span></b>
+   <hr>
+</body>
+
+</html>

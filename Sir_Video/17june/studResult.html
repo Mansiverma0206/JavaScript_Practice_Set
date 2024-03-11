@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Student MarkSheet</title>
+   <script>
+      function result() {
+         var hindi = document.getElementById('hdn').value * 1;
+         var english = document.getElementById('eng').value * 1;
+         var maths = document.getElementById('math').value * 1;
+         var chemistry = document.getElementById('che').value * 1;
+         var physices = document.getElementById('phy').value * 1;
+
+         var total = document.getElementById('res');
+         var percentage = document.getElementById('per');
+         var mark = document.getElementById('mark');
+
+         var total = hindi + english + maths + chemistry + physices;
+         res.innerText = total;
+
+         var percentage = total * 100 / 500;
+
+         if (percentage >= 80 && percentage <= 100)
+            mark.innerHTML = "<span style='color:violet'>You are in merit list</span>";
+         else
+            if (percentage >= 60 && percentage >= 79)
+               mark.innerHTML = "<span style='color:green'>pass with first divsion</span>"
+            else
+               if (percentage >= 45 && percentage <= 59)
+                  mark.innerHTML = "<span style='color:blue'>pass with second divsion</span>"
+               else
+                  if (percentage >= 33 && percentage <= 44)
+                     mark.innerHTML = "<span style='color:yellow'>pass with third divsion</span>"
+                  else
+                     if (percentage < 33)
+                        mark.innerHTML = "<span style='color:red'>Fail</span>"
+                     else{
+                        mark.innerHTML = "<span style='color:orange'>Please enter a valid number</span>"
+                        return;
+                     }
+         per.innerText = percentage;
+      }
+
+   </script>
+</head>
+
+<body style="background-color: black;color:brown;">
+   <h1 style="text-align: center;">Student Mark Sheet</h1>
+   <hr style="color:violet;">
+   <input type="number" name="" id="hdn" placeholder="Hindi">&nbsp;&nbsp;
+   <input type="number" name="" id="eng" placeholder="English">&nbsp;&nbsp;
+   <input type="number" name="" id="math" placeholder="Maths">&nbsp;&nbsp;
+   <input type="number" name="" id="che" placeholder="Chemistry">&nbsp;&nbsp;
+   <input type="number" name="" id="phy" placeholder="Physices">&nbsp;&nbsp;
+   <hr>
+
+   <span id="res">Total : 00</span>&nbsp;&nbsp; &nbsp;&nbsp;
+   <span id="per">Percentage : 00</span>&nbsp;&nbsp; &nbsp;&nbsp;
+   <span id="mark">Remark : ---- </span>&nbsp;&nbsp;
+   <hr>
+   <button onclick="result()">Okay</button>
+</body>
+
+</html>

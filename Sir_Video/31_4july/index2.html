@@ -1,0 +1,26 @@
+<html>
+
+<head>
+   <script>
+      function fun() {
+         alert("everyone")
+      }
+      var outob;
+      var intervalOb ;
+      function setUp() {
+      //  outob =  setTimeout(fun, 6000)
+       intervalOb =   setInterval(fun,3000)
+      }
+      function outUp(){
+      //  clearTimeout(outob) 
+       clearInterval(intervalOb)
+      }
+   </script>
+</head>
+
+<body>
+   <button onclick="setUp()">Start</button>
+   <button onclick="outUp()">Stop</button>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<html>
+   <head>
+      <script src="jquery-3.7.1.min.js"></script>
+      <script>
+         $(document).ready(function(){
+            $('#calc').click(function(){
+               var x = parseFloat($("#fnum").val());
+               var y = parseFloat($("#snum").val());
+               var op = $("#op").val()
+
+               switch(op){
+                  case '1' : var z = x+y ; break;
+                  case '2' : var z = x-y ; break;
+                  case '3' : var z = x*y ; break;
+                  case '4' : var z = x/y ; break;
+                  case '5' : var z = x%y ; break;
+               }
+               $('#res').text(z);
+            })
+         })
+      </script>
+   </head>
+   <body>
+   <h1>Calculation Demo</h1>
+   <hr>
+   <input type="number" id="snum" placeholder="First Number">&nbsp;&nbsp;
+   <input type="number" id="fnum" placeholder="Second Number">&nbsp;&nbsp;
+   <select name="" id="op">
+      <option value="">Choose your option</option>
+      <option value="1">+</option>
+      <option value="2">-</option>
+      <option value="3">*</option>
+      <option value="4">/</option>
+      <option value="5">%</option>
+   </select>&nbsp;&nbsp;
+   <b>Result :<span id="res">00</span></b>
+   <br><br>
+   <button id="calc">Okay</button>
+   </body>
+</html>

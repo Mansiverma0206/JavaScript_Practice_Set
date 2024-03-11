@@ -1,0 +1,31 @@
+<html>
+   <head>
+      <script>
+          function days()
+          {
+            var grade = document.getElementById('grade').value;
+            switch(grade)
+            {
+               case "A":
+               case "a": alert("Salary 25000");
+                         break;
+               case "B":
+               case "b" : alert("Salary 15000");
+                         break;
+               case "C":
+               case "c" : alert("Salary 10000");
+                        break;
+               case "D":
+               case "d" : alert("Salary 8000");
+                        break;
+               default : alert("Wrong Grade")
+            }
+
+          }
+      </script>
+   </head>
+   <body>
+      <input type="text" placeholder="Grade(A/B/C/D)" id="grade">&nbsp;&nbsp;&nbsp;&nbsp;
+      <button onclick="days()">Okay</button>
+   </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Practice</title>
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+      }
+
+      body {
+         background-color: aqua;
+      }
+
+      h1 {
+         height: 7vh;
+         width: 100%;
+         background-color: #dd0cda;
+         color: #9fe10c;
+         text-align: center;
+      }
+
+      input {
+         margin: 20px;
+      }
+   </style>
+   <script>
+      function cal() {
+         var x = document.getElementById('fnum').value;
+         var y = document.getElementById('snum').value;
+         var z = document.getElementById('res').value;
+
+         var z = parseInt(x) + parseInt(y);
+         alert(z)
+
+
+
+
+      }
+   </script>
+</head>
+
+<body>
+   <h1>Calcultion Demo</h1>
+   <hr>
+   <input type="number" id="fnum" placeholder="First Number">&nbsp;&nbsp;
+   <input type="number" id="snum" placeholder="Second Number">&nbsp;&nbsp;
+   <select name="" id="">
+      <option>Choose the option</option>
+      <option>Addition => (+)</option>
+      <option>Substraction => (-)</option>
+      <option> Multiplication => (*)</option>
+      <option>Division = > (/)</option>
+      <option>Modulase => (%)</option>
+   </select>
+   <span id="res">Result : 00</span>
+   <hr>
+   <button onclick="cal()">Submit</button>
+
+</body>
+
+</html>

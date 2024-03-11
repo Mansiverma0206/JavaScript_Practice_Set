@@ -1,0 +1,31 @@
+<script>
+   function show() {
+      var num = document.getElementById('box').value;
+      var res = document.getElementById('resv');
+      var fnl = document.getElementById('fnl');
+      var snt = document.getElementById('snt');
+
+      var a = parseInt(num / 1000);
+      var b = parseInt(num / 100) % 10;
+      var c = parseInt((num % 100) / 10);7890
+      var d = num % 10;
+
+      var value = (d * 1000) + (c * 100) + (b * 10) + a
+      resv.innerText = value;
+
+      var val = a + d;
+      fnl.innerText = val;
+
+      var v = b + c;
+      snt.innerText = v;
+   }
+
+</script>
+
+<body>
+   <input type="number" name="" placeholder="Enter a four digit number" id="box"><hr>
+   <span>Reverse Number : <b id="resv">00</b></span><br>
+   <span>Addition of First And Last Number :<b id="fnl">00</b></span><br>
+   <span>Addition of Second And Third Number :<b id="snt">00</b></span><br>
+   <button onclick="show()">okay</button>
+</body>

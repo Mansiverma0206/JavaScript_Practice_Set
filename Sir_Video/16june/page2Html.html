@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Inner-Text & Inner-HTML DEMO</title>
+   <script>
+      function fun1()
+      {
+         var ob = document.getElementById('heading')
+         var text=ob.innerHTML;
+         alert(text)
+      }
+      function fun2()
+      {
+         var txtelement = document.getElementById('heading')
+         txtelement.innerHTML = "<u id='abc'>Good morning</u>"
+      }
+      function fun3(){
+         var abc = document.getElementById('abc');
+         // alert(abc.innerText)
+         alert(abc.innerHTML)
+      }
+   </script>
+</head>
+<body>
+   <h1 id="heading" style="text-align: center;"><u>InfoGrains <i>Indore</i></u></h1>
+   <hr>
+   <button onclick="fun1()">Okay</button>
+   <button onclick="fun2()">Okay</button>
+   <button onclick="fun3()">Okay</button>
+   </body>
+</html>

@@ -1,0 +1,48 @@
+<html>
+   <head>
+      <script src="jquery-3.7.1.min.js"></script>
+      <style>
+         img{
+            width: 40%;
+            height: 90%;
+         }
+         .abc{
+            border-radius: 50%;
+         }
+         .xyz{
+
+         }
+      </style><script>
+         // for id
+         // $(document).ready(function()
+         // {
+         //    $('#img1').mouseenter(function()
+         //    {
+         //        $('#img1').addClass('abc')
+         //    })
+         //    $('#img1').mouseleave(function()
+         //    {
+         //        $('#img1').removeClass('abc')
+         //    })
+         // })
+
+         // for class
+         $(document).ready(function()
+         {
+            $('.img1').mouseenter(function()
+            {
+                $(this).addClass('abc')
+            })
+            $('.img1').mouseleave(function()
+            {
+                $(this).removeClass('abc')
+            })
+         })
+      </script>
+   </head>
+   <body>
+      <img src="img3.webp" class="img1" alt=""><br><br>
+      <img src="img4.jpg" class="img1" alt=""><br><br>
+      <img src="img5.avif" class="img1"  alt=""><br><br>
+   </body>
+</html>

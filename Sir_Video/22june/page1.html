@@ -1,0 +1,32 @@
+<html>
+   <head>
+      <script>
+          function days()
+          {
+            var day = document.getElementById('day').value;
+            switch(day)
+            {
+               case "1" : alert("MONDAY");
+                         break;
+               case "2" : alert("TUESDAY");
+                        break;
+               case "3" : alert("WEDNESDAY");
+                        break;
+               case "4" : alert("THURSDAY");
+                          break;
+               case "5" : alert("FRIDAY");
+                         break;
+               case "6" : alert("SATURDAY");
+                          break;
+               case "7" : alert("SUNDAY");
+                        break;
+            }
+
+          }
+      </script>
+   </head>
+   <body>
+      <input type="text" placeholder="Week Day" id="day">&nbsp;&nbsp;&nbsp;&nbsp;
+      <button onclick="days()">Okay</button>
+   </body>
+</html>

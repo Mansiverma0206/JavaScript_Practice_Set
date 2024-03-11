@@ -1,0 +1,38 @@
+<html>
+   <head>
+      <script>
+            function addstud()
+            {
+                var namebox = document.getElementById('studName');
+                var list = document.getElementById("list");
+                var name = namebox.value;
+
+               var obj = document.createElement('div');
+               var bd = document.createElement('b')
+               bd.innerText = name;
+
+               var btn = document.createElement('button')
+               btn.innerText = 'Delete'
+               btn.onclick = function()
+               {
+                  list.removeChild(obj);
+               }
+
+               obj.appendChild(bd);
+               obj.appendChild(btn)
+               list.appendChild(obj)
+            }
+      </script>
+   </head>
+   <body>
+      
+      <h1>Student List</h1>
+      <hr>
+      <input type="text" id="studName" placeholder="Enter student name">&nbsp;&nbsp;
+      <button onclick="addstud()">Add Student</button>
+      <hr>
+      <div id="list">
+
+      </div>
+   </body>
+</html>

@@ -1,0 +1,54 @@
+<html>
+
+<head>
+   <link rel="stylesheet" href="./index.css">
+   <script src="./index.js"></script>
+
+</head>
+
+<body onload="init()">
+   <h1>Student Record</h1>
+   <hr>
+   <div id="frmdiv">
+      <input class="element" id="rollBox" type="text" placeholder="Roll number">
+      <input class="element" id="nameBox" type="text" placeholder="Student Name">
+      <select class="element" id="branchBox">
+         <option>Choose your branch</option>
+         <option>CS</option>
+         <option>FT</option>
+         <option>CE</option>
+         <option>EC</option>
+         <option>ME</option>
+      </select>
+      <br>
+      <input class="element" type="number" id="phyBox" placeholder="physices">
+      <input class="element" type="number" id="cheBox" placeholder="chemistry">
+      <input class="element" type="number" id="mathBox" placeholder="maths">
+      <br><br>
+      <button class="element" onclick="addStud()">Add Student</button>
+      &nbsp;&nbsp;
+      <button class="element" onclick="saveStud()">Save Student</button>
+      <hr>
+      <table border="1px" align="center" cellpadding="20" cellspacing="5">
+         <thead>
+            <tr>
+               <th>S. No</th>
+               <th>Roll No</th>
+               <th>Name</th>
+               <th>Branch</th>
+               <th>physics</th>
+               <th>chemistry</th>
+               <th>maths</th>
+               <th>Total Marks</th>
+               <th>operation</th>
+            </tr>
+         </thead>
+         <tbody id="tbody">
+
+         </tbody>
+      </table>
+   </div>
+
+</body>
+
+</html>

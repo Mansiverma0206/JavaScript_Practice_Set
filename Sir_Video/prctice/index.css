@@ -1,0 +1,14 @@
+h1 {
+   color: teal;
+   text-align: center;
+}
+
+.frmdiv {
+   text-align: center;
+}
+
+.input {
+   height: 5%;
+   margin: 5px;
+   width: 250px;
+}

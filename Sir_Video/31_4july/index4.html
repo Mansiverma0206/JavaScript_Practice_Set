@@ -1,0 +1,19 @@
+<html>
+   <head>
+      <script>
+           function check(evt)
+           {
+            var coode = evt.keyCode;
+            if(code>=48 && code<=57){
+               return true;
+            }else{
+               return false;
+            }
+           }
+      </script>
+   </head>
+   <body>
+      
+      <input type="text" name="" placeholder="number" onkeydown="return check(event)">
+   </body>
+</html>
