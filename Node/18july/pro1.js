@@ -1,0 +1,15 @@
+var numbers = [11,22,33,44,55,66,77,88,909,12,1,0,45,3,22,11,44,5]
+
+var eNum = []
+
+for(var i =0;i<numbers.length;i++)
+{
+    if(numbers[i]%2==0)
+    {
+      eNum.push(numbers[i])
+    }
+}
+
+
+console.log(numbers)
+console.log(eNum)
